@@ -1,0 +1,43 @@
+*Bonjour Alain, peut tu te présenter ?*
+
+Bonjour je suis Alain HELAILI et je bosse chez GitHub.
+
+> lui demander d'étoffer, quel boulot ?
+
+*Suite à ta présentation, ça m'intéresse beaucoup, mais comment je peux convaincre ? Moi petit développeur.*
+
+Il faut prendre le prendre le problème par l'angle de l'object final,
+l'idée c'est pouvoir dire à un utilisateur métier qu'on va avoir le minimum de temps possible pour passer d'une idée à une mise en production et à donner la fonctionnalité à l'utilisateur.
+Partant de cette volonté, l'idée est de se mettre en ordre de bataille pour pouvoir arriver à cet objectif avec un chemin sécurisé au maximum.
+
+*Quels sont les riques de MEP ?*
+
+Le risque de la MEP en elle même, à partir du moment où on a complétement automatisé le processus et que ce processus là n'est pas juste pour le processus pour la MEP mais pour la mise en n'importe quel environnement donc l'idée est d'avoir exactement les mêmes étapes, le même code pour passer à un environnement de QA, de test et de production.
+Donc a partir du moment où l'on sait que notre processus est 100% répétable les dangers de la MEP sont quasi éliminés.
+De toute façon ils seront toujours moins important quand on a l'habitude de le faire très fréquement plutôt que quand on le fait une fois par mois.
+Plus on le fait plus c'est sécurisé.
+
+*Tout ce que tu présente, tous les frameworks, https://github.com/github/gh-ost[Gh-ost], https://github.com/jnunemaker/flipper[Flipper] et https://github.com/github/scientist[Scientist], nécessite de modifier le code de production, n'y a-t-il pas un risque en ajoutant ou enlevant ce code de casser quelque chose ?*
+
+Après ça ne fait qu'un framework de plus parmi les 250 qu'on utilise déjà donc ce n'est pas un gros risque.
+Il faut évidemment les maitriser un minimum, ça va rajouter sans doute un petit peu de travail de maintenabilité et de maintenance.
+Quand on parle de scientist par exemple ou de flipper, il faut penser à supprimer les expérimentations qui n'ont plus lieu d'être, les features flags qui n'ont plus lieu d'être, c'est un peu de nettoyage à faire mais c'est du code qui est assez trivial au final, il n'y pas de gros risques la dessus.
+
+*Qu'est ce que tu conseilles comme bonnes pratiques pour mettre tout celà en place au delà des frameworks ?*
+
+il faut que les équipes soient responsabilisés, je pense que le problème du technique n'est pas très compliqué, tout existe, tout est là, il suffit de le mettre en place.
+La MEP automatisée on sait le faire, il y a plein de technique qui existe maintenant depuis des années qui nous permettent de le faire.
+Pour moi le critère clé, il faut se dire que les développeurs soient reponsabilisés, qu'ils soient vraiment conscients qu'il est important pour eux de suivre une fonctionnalité jusqu'a la prod, en prod c'est à eux de regarder ce qui se passe, donc il faut aussi leur donné les outils  pour avoir l'information, si on ne leur donne pas la bonne information on ne vas pas les responsabilisés, s'ils n'ont pas la capacité de voir 100% des impacts de leur code en prod ils vont se reposer sur quelqu'un d'autre pour avoir cette information.
+Cette responsabilisation là elle passe par leur donner l'autonomie, l'information dont ils ont besoin et après ce qui est important c'est de sécuriser  et de leur donner en permanence à  chaque étape de leur développement l'information qui va bien et ça veut dire passer du temps sur l'outillage de l'intégration continue, sur la remontée d'information de la part de l'intégration continue et d'aller jusqu'a la prod en remontant toujours une information au maximum au développeur.
+Il faut qu'il y est de la visibilité en permanence et qu'on travaille à se dire : l'intégration continue.
+
+> là il diverge...
+
+Pour moi **CI** ce n'est plus *Continuous Integration* mais *Continous Information*, il faut qu'ils aient de l'information en permanence pour pouvoir prendre de bonnes décisions et pour détecter rapidement que quelque chose dévie par rapport à la cible de qualité.
+
+*Et sinon une question qui me trotte dans la tête par rapport au workflow avec Git, pour ou contre le squash avant la merge de la branche ?*
+
+Chez GitHub, on s'en fout pour une raison très simple, historiquement les équipes regardaient le gitlog pour savoir ce qui s'étaient passés et nous on ne regarde pas le gitlog on regarde les pull requests.
+Donc que ce soit un `squash`, un `rebase`, un `merge`, un `fast-forward` etc... la pull request, elle est pareil, c'est la même et c'est ça qui fait foi, qui compte donc ni pour ni contre bien au contraire
+
+*Merci Alain.*
