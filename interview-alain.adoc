@@ -2,8 +2,6 @@
 
 Bonjour je suis Alain HELAILI et je bosse chez GitHub.
 
-> lui demander d'étoffer, quel boulot ?
-
 *Suite à ta présentation, ça m'intéresse beaucoup, mais comment je peux convaincre ? Moi petit développeur.*
 
 Il faut prendre le prendre le problème par l'angle de l'object final,
@@ -30,8 +28,6 @@ La MEP automatisée on sait le faire, il y a plein de technique qui existe maint
 Pour moi le critère clé, il faut se dire que les développeurs soient reponsabilisés, qu'ils soient vraiment conscients qu'il est important pour eux de suivre une fonctionnalité jusqu'a la prod, en prod c'est à eux de regarder ce qui se passe, donc il faut aussi leur donné les outils  pour avoir l'information, si on ne leur donne pas la bonne information on ne vas pas les responsabilisés, s'ils n'ont pas la capacité de voir 100% des impacts de leur code en prod ils vont se reposer sur quelqu'un d'autre pour avoir cette information.
 Cette responsabilisation là elle passe par leur donner l'autonomie, l'information dont ils ont besoin et après ce qui est important c'est de sécuriser  et de leur donner en permanence à  chaque étape de leur développement l'information qui va bien et ça veut dire passer du temps sur l'outillage de l'intégration continue, sur la remontée d'information de la part de l'intégration continue et d'aller jusqu'a la prod en remontant toujours une information au maximum au développeur.
 Il faut qu'il y est de la visibilité en permanence et qu'on travaille à se dire : l'intégration continue.
-
-> là il diverge...
 
 Pour moi **CI** ce n'est plus *Continuous Integration* mais *Continous Information*, il faut qu'ils aient de l'information en permanence pour pouvoir prendre de bonnes décisions et pour détecter rapidement que quelque chose dévie par rapport à la cible de qualité.
 
