@@ -2,15 +2,15 @@
 
 Bonjour je suis Alain HELAILI et je bosse chez GitHub.
 
-*Suite à ta présentation, ça m'intéresse beaucoup, mais comment je peux convaincre ? Moi petit développeur.*
+*Suite à ta présentation, ça m'intéresse beaucoup, mais comment je peux convaincre ?*
 
-Il faut prendre le prendre le problème par l'angle de l'object final,
+Il faut prendre le problème par l'angle de l'object final,
 l'idée c'est pouvoir dire à un utilisateur métier qu'on va avoir le minimum de temps possible pour passer d'une idée à une mise en production et à donner la fonctionnalité à l'utilisateur.
 Partant de cette volonté, l'idée est de se mettre en ordre de bataille pour pouvoir arriver à cet objectif avec un chemin sécurisé au maximum.
 
 *Quels sont les riques de MEP ?*
 
-Le risque de la MEP en elle même, à partir du moment où on a complétement automatisé le processus et que ce processus là n'est pas juste pour le processus pour la MEP mais pour la mise en n'importe quel environnement donc l'idée est d'avoir exactement les mêmes étapes, le même code pour passer à un environnement de QA, de test et de production.
+Le risque de la MEP en elle même, à partir du moment où on a complétement automatisé le processus et que ce processus là n'est pas juste le processus pour la MEP mais pour le déploiement en n'importe quel environnement donc l'idée est d'avoir exactement les mêmes étapes, le même code pour passer à un environnement de QA, de test et de production.
 Donc a partir du moment où l'on sait que notre processus est 100% répétable les dangers de la MEP sont quasi éliminés.
 
 De toute façon ils seront toujours moins important quand on a l'habitude de le faire très fréquement plutôt que quand on le fait une fois par mois.
