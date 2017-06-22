@@ -5,7 +5,7 @@ Bonjour je suis Alain HELAILI, je suis Solutions Engineer chez GitHub, j'aide le
 *Suite à ta présentation, ça m'intéresse beaucoup, mais comment je peux convaincre ?*
 
 Il faut prendre le problème par l'angle de l'object final,
-l'idée c'est pouvoir dire à un utilisateur métier qu'on va avoir le minimum de temps possible pour passer d'une idée à une mise en production et à donner la fonctionnalité à l'utilisateur.
+l'idée c'est de pouvoir dire à un utilisateur métier qu'on va avoir le minimum de temps possible pour passer d'une idée à une mise en production et à donner la fonctionnalité à l'utilisateur.
 Partant de cette volonté, l'idée est de se mettre en ordre de bataille pour pouvoir arriver à cet objectif avec un chemin sécurisé au maximum.
 
 *Quels sont les riques de MEP ?*
