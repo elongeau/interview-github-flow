@@ -1,11 +1,11 @@
-*Bonjour Alain, peut tu te présenter ?*
+*Bonjour Alain, peux tu te présenter ?*
 
-Bonjour je suis Alain HELAILI, je suis Solutions Engineer chez GitHub, j'aide les clients qui veulent déployer GitHub Enterprise à définir l'architecture cible, mais aussi à repenser leur manière de travailler avec Git et GitHub. Je travaille également avec la communauté des utilisateurs de GitHub.
+Bonjour je suis https://twitter.com/alainhelaili[Alain HELAILI], je suis Solutions Engineer chez https://github.com[GitHub], j'aide les clients qui veulent déployer GitHub Enterprise à définir l'architecture cible, mais aussi à repenser leur manière de travailler avec Git et GitHub. Je travaille également avec la communauté des utilisateurs de GitHub.
 
 *Suite à ton talk, ça m'intéresse beaucoup, mais comment je peux convaincre d'utiliser ce workflow ?*
 
-Il faut prendre le problème par l'angle de l'object final,
-l'idée c'est de pouvoir dire à un utilisateur métier qu'on va avoir le minimum de temps possible pour passer d'une idée à une mise en production et à donner la fonctionnalité à l'utilisateur.
+(NDLR: présentation du workflow GitHub https://lemag.sfeir.com/devfest-lille-2017[ici])
+Il faut prendre le problème par l'angle de l'object final, l'idée c'est de pouvoir dire à un utilisateur métier qu'on va avoir le minimum de temps possible pour passer d'une idée à une mise en production et à donner la fonctionnalité à l'utilisateur.
 Partant de cette volonté, l'idée est de se mettre en ordre de bataille pour pouvoir arriver à cet objectif avec un chemin sécurisé au maximum.
 
 *Quels sont les risques de mise en production ?*
@@ -13,13 +13,11 @@ Partant de cette volonté, l'idée est de se mettre en ordre de bataille pour po
 Le risque de la mise en production en elle même, à partir du moment où on a complétement automatisé le processus et que ce processus là n'est pas juste le processus pour la mise en production mais pour le déploiement en n'importe quel environnement donc l'idée est d'avoir exactement les mêmes étapes, le même code pour passer à un environnement de QA, de test et de production.
 Donc a partir du moment où l'on sait que notre processus est 100% répétable les dangers de la mise en production sont quasi éliminés.
 
-De toute façon ils seront toujours moins importants quand on a l'habitude de le faire très fréquemment plutôt que quand on le fait une fois par mois.
-Plus on le fait plus c'est sécurisé.
+De toute façon ils seront toujours moins importants quand on a l'habitude de le faire très fréquemment plutôt que quand on le fait une fois par mois. Plus on le fait plus c'est sécurisé.
 
 *Tout ce que tu présentes, tous les frameworks, https://github.com/github/gh-ost[Gh-ost], https://github.com/jnunemaker/flipper[Flipper] et https://github.com/github/scientist[Scientist], nécessitent de modifier le code de production, n'y a-t-il pas un risque en ajoutant ou enlevant ce code de casser quelque chose ?*
 
-Après ça ne fait qu'un framework de plus parmi les 250 qu'on utilise déjà donc ce n'est pas un gros risque.
-Il faut évidemment les maitriser un minimum, ça va rajouter sans doute un petit peu de travail de maintenabilité et de maintenance.
+Après ça ne fait qu'un framework de plus parmi les 250 qu'on utilise déjà donc ce n'est pas un gros risque. Il faut évidemment les maitriser un minimum, ça va rajouter sans doute un petit peu de travail de maintenabilité et de maintenance.
 
 Quand on parle de scientist par exemple ou de flipper, il faut penser à supprimer les expérimentations qui n'ont plus lieu d'être, les features flags qui n'ont plus lieu d'être, c'est un peu de nettoyage à faire mais c'est du code qui est assez trivial au final, il n'y pas de gros risques la dessus.
 
@@ -28,11 +26,11 @@ Quand on parle de scientist par exemple ou de flipper, il faut penser à supprim
 Il faut que les équipes soient responsabilisées, je pense que le problème du technique n'est pas très compliqué, tout existe, tout est là, il suffit de le mettre en place.
 La mise en production automatisée on sait le faire, il y a plein de techniques qui existent maintenant depuis des années qui nous permettent de le faire.
 
-Pour moi le critère clé c’est la responsabilisation des développeurs, qu’ils aient conscience qu'il est important pour eux de suivre une fonctionnalité jusqu'à la production, en production c'est à eux de regarder ce qui se passe, donc il faut aussi leur donnr les outils  pour avoir l'information, si on ne leur donne pas la bonne information on ne va pas les responsabiliser, s'ils n'ont pas la capacité de voir 100% des impacts de leur code en production ils vont se reposer sur quelqu'un d'autre pour avoir cette information.
+Pour moi le critère clé c’est la responsabilisation des développeurs, qu’ils aient conscience qu'il est important pour eux de suivre une fonctionnalité jusqu'à la production, en production c'est à eux de regarder ce qui se passe, donc il faut aussi leur donner les outils  pour avoir l'information, si on ne leur donne pas la bonne information on ne va pas les responsabiliser, s'ils n'ont pas la capacité de voir 100% des impacts de leur code en production ils vont se reposer sur quelqu'un d'autre pour avoir cette information.
 
 Cette responsabilisation, elle passe par leur donner l'autonomie, l'information dont ils ont besoin et après ce qui est important c'est de sécuriser  et de leur donner en permanence à  chaque étape de leur développement l'information qui va bien et ça veut dire passer du temps sur l'outillage de l'intégration continue, sur la remontée d'information de la part de l'intégration continue et d'aller jusqu'à la production en remontant toujours une information au maximum au développeur.
 
-Pour moi **CI** ce n'est plus *Continuous Integration* mais *Continous Information*, il faut qu'ils aient de l'information en permanence pour pouvoir prendre de bonnes décisions et pour détecter rapidement que quelque chose dévie par rapport à la cible de qualité.
+Pour moi **CI** ce n'est plus *Continuous Integration* mais *Continous Information*, il faut qu'ils aient de l'information en permanence pour pouvoir prendre de bonnes décisions et détecter rapidement que quelque chose dévie par rapport à la cible de qualité.
 
 *Et sinon une question qui me trotte dans la tête par rapport au workflow avec Git, pour ou contre le squash avant la merge de la branche ?*
 
